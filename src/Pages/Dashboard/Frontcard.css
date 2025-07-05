@@ -1,0 +1,50 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  padding: 0; /* ✅ Remove side padding */
+  margin: 0;  /* ✅ Remove side margin */
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  flex: 1 1 300px;
+  min-width: 280px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin: 0;  /* ✅ Remove card internal margin */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #f9fbfc;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #062544;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+}

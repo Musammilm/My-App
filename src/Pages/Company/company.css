@@ -1,0 +1,98 @@
+/* === RESET & BASE === */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  box-sizing: border-box;
+}
+
+/* === PAGE CONTAINER === */
+.company-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  padding: 40px 20px;
+  background-color: #f4f6f9;
+}
+
+/* === FORM CARD === */
+.form-card {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e0e0e0;
+}
+
+/* === HEADING === */
+.form-card h3 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #062544;
+  text-align: center;
+}
+
+/* === INPUT FIELDS === */
+.form-card input[type="text"],
+.form-card input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.form-card input:focus {
+  border-color: #062544;
+  outline: none;
+}
+
+/* === ERROR MESSAGE === */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* === SUBMIT BUTTON === */
+.save-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #062544;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.save-btn:hover {
+  background-color: #02152e;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .company-wrapper {
+    padding: 24px 16px;
+  }
+
+  .form-card {
+    padding: 24px;
+  }
+
+  .form-card h3 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,23 @@
+.breadcrumb-container {
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.breadcrumb-link {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 6px;
+}
+
+.breadcrumb-link::after {
+  /* content: '/'; */
+  margin-left: 6px;
+  color: #888;
+}
+
+.breadcrumb-current {
+  font-weight: 600;
+  color: #062544;
+}
